@@ -13,7 +13,7 @@ Site Web com uma Calculadora simples
 <br>
 
 <p align="center">
-  <img alt="projeto Caculator" src="https://lh3.googleusercontent.com/pw/AMWts8CKSk7oDz-VD31v3NHclY0K4BpCyc7IlqEJlA1KYjrsTobJpKs5DNWlzOl5z6uQkKfOHHvYm7FWlauDGl9xsz5yRaaWl19BcGvwtJFpHf5UqR9kAheN5TsMiPejvErGSb7D_uKpygbd_Nwmnrdx-LsuUw=w666-h375-no?authuser=0" width="100%">
+  <img alt="projeto Caculator" src="https://lh3.googleusercontent.com/pw/AMWts8CyechYzDe_yXqw_oncMVPH1RuEMgdkdBl22ECx6dsgtO0utoj1uUrr6XaGVi8vsTCid8Pwl2UC0scEB1hPbR_pDZCTk4eXYD9JxLgeTrTjomz66asq9n9DeH6YoJDyf4T2VwbqYncSRAyLTUT5tNJWOA=w725-h702-no?authuser=0" width="100%">
 </p>
 
 ## 🚀 Tecnologias
