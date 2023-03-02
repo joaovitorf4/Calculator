@@ -1,0 +1,218 @@
+* {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px
+}
+
+:root {
+    --btn-color: rgba(51, 51, 51, 1);
+    --bg-color: rgb(0, 0, 0);
+    --font-color: rgb(255, 255, 255);
+    --switch-bg-url: url(imgs/moon-stars.svg);
+}
+
+.light {
+    --btn-color: rgba(204, 204, 204, 1);
+    --bg-color: rgb(255, 255, 255);
+    --font-color: rgb(0, 0, 0);
+    --switch-bg-url: url(imgs/sun.svg);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    box-sizing: border-box;
+}
+
+#switch {
+    position: absolute;
+    top: 50px;
+    margin: 4px auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url)  no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    transform:  translateY(-50%);
+    animation:  slide-out .2s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid rgba(145, 145, 145, 0.644);
+    cursor: pointer;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgb(65, 65, 65);
+    border: 1px solid white;
+    border-radius: 9999px;
+}
+
+.light #switch button {
+    animation:  slide-in .2s forwards;
+}
+
+@keyframes slide-in {
+    from{
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from{
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+#body-calc {
+    width: 270px;
+    height: 512px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+}
+
+#panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 162px;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+
+#panel-content {
+    font-size: 64px;
+    margin-right: 4px;
+}
+
+#btns-equal{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    margin-bottom: 9px;
+}
+
+#others-buttons{
+    position: relative;
+    height: 286px;
+}
+
+#btns-operations {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+
+#btns-extra {
+    width: 200px;
+    height: 55px;
+    position: absolute;
+    bottom: 36px;
+}
+
+#btns-numbers {
+    width: 200px;
+    height: 187px;
+    margin-bottom: 10px;
+}
+
+#btn-0 {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+}
+
+#btn-equal {
+    position: absolute;
+    width: 254px;
+    height: 55px;
+    border-radius: 30px;
+    background: #FD9429;
+}
+
+#btn-point {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+#btn-C {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #FD9429;
+    color: white;
+}
+
+#btn-equal img {
+    display: flex;
+    margin: auto;
+}
+
+#btns-operations img {
+    width: 25px;
+}
+
+button, #panel-content {
+    border: none;
+    color: var(--font-color);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#btns-extra button {
+    margin-left: 8px;
+}
+
+#btns-numbers button {
+    width: 55px;
+    height: 55px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+#btns-operations button {
+    width: 55px;
+    height: 55px;
+    background: #FD9429;
+    margin-bottom: 10px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btns-numbers button, #btn-0, #btn-point {
+    background-color: var(--btn-color);
+}
+
+#others-buttons button {
+    border-radius: 50%;
+    font-size: 24px;
+}
